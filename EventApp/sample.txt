@@ -1,0 +1,45 @@
+   // <>
+    //   <header>
+    //     <nav>
+    //       <div className="styles.leftContainerH">
+
+    //       </div>
+    //       <div className="styles.rightContainerH">
+    //         <a href="/">Home</a>
+    //         <a href="/routes/about-us">About</a>
+    //         <a href="/routes/events">Events</a>
+    //       </div>
+    //     </nav>
+    //   </header>
+
+    //   <main>
+    //     <h1>Popular cities events {data}</h1>
+    //     <a href="">
+    //       <img />
+    //       <h2>Events in London</h2>
+    //       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel amet hic quis necessitatibus consequatur dolore, excepturi sunt. Expedita earum sapiente blanditiis nostrum.</p>
+    //     </a>
+    //     <a href="">
+    //       <img />
+    //       <h2>Events in San-francisco</h2>
+    //       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel amet hic quis necessitatibus consequatur dolore, excepturi sunt. Expedita earum sapiente blanditiis nostrum.</p>
+    //     </a>
+    //     <a href="">
+    //       <img />
+    //       <h2>Events in Barcelona</h2>
+    //       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel amet hic quis necessitatibus consequatur dolore, excepturi sunt. Expedita earum sapiente blanditiis nostrum.</p>
+    //     </a>
+    //   </main>
+
+    //   <footer>
+    //     <div className="styles.leftContainerF">
+
+    //     </div>
+    //     <div className="styles.rightContainerF">
+    //       <a href="">facebook</a>
+    //       <a href="">instagram</a>
+    //       <a href="">twitter</a>
+    //       <a href="">youtube</a>
+    //     </div>
+    //   </footer>
+    // </>
