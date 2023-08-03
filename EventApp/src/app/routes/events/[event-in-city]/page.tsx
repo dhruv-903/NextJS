@@ -1,4 +1,8 @@
 
+import Navbar from '@/app/components/Navbar';
+import styles from '../../../styles/cityEvent.module.css'
+import Footer from '@/app/components/Footer';
+
 type MyString = {
   params: {
     'event-in-city': string;
@@ -26,19 +30,22 @@ const MyEvent = async (context: MyString) => {
 
   return (
     <>
-    <h1>Events in </h1>
-      {
-        data.map((event: any) => {
-          return (
-            <a key={event.id} href={`/routes/events/${event.city}/${event.id}`}>
-              <h2>{event.title}</h2>
-              <img src={event.image} height={400} width={350} alt="" />
-              <p>{event.description}</p>
-
-            </a>
-          )
-        })
-      }
+      <Navbar />
+      <h1>Events in {data[0].city}  </h1>
+      <main className={styles.mainContainer} >
+        {
+          data.map((event: any) => {
+            return (
+              <a className={styles.hrefContainer} key={event.id} href={`/routes/events/${event.city}/${event.id}`}>
+                <img src={event.image} height={400} width={350} alt="" />
+                <h2>{event.title}</h2>
+                <p>{event.description}</p>
+              </a>
+            )
+          })
+        }
+      </main>
+      <Footer />
     </>
   )
 }

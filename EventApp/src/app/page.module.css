@@ -1,0 +1,42 @@
+
+.container{
+    width: 60%;
+    margin: auto;
+    margin: 50px auto;
+}
+
+.headingOfPage{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(225, 5, 225);
+    margin: 30px 0;
+}
+
+.hrefStyle{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hrefStyle .textContainer{
+    width: 60%;
+    text-align: justify;
+    color: white;
+}
+
+.hrefStyle .textContainer h2{
+    color: rgb(221, 8, 221);
+    text-align: center;
+}
+.hrefStyle .textContainer p{
+    font-size: 17px;
+}
+
+.imageContainer{
+    height: fit-content;
+    width: fit-content;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius:5%;
+    overflow: hidden;
+}

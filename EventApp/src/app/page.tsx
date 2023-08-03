@@ -1,48 +1,50 @@
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 import styles from './page.module.css'
 
 export default async function Home() {
   const eventsData = await getEventsData()
   return (
     <>
-      <header>
-        <nav>
-          <div className="styles.leftContainerH">
+      <body style={{backgroundColor:'black'}}>
+        <Navbar />
 
+        <main className={styles.container}>
+          <h1 className={styles.headingOfPage} >Popular cities events</h1>
+          <div className={styles.mainStyle} >
+            {eventsData.map((event, index) => {
+              index++;
+              if (index === 2) {
+                return (
+                  <a className={styles.hrefStyle} key={event.id} href={`/routes/events/${event.id}`}>
+                    <div className={styles.textContainer}>
+                      <h2>{event.title}</h2>
+                      <p>{event.description}</p>
+                    </div>
+                    <div className={styles.imageContainer}>
+                      <img height={400} width={350} src={event.image} />
+                    </div>
+                  </a>
+                )
+              }
+              return (
+                <a className={styles.hrefStyle} key={event.id} href={`/routes/events/${event.id}`}>
+                  <div className={styles.imageContainer}>
+                    <img height={400} width={350} src={event.image} />
+                  </div>
+                  <div className={styles.textContainer}>
+                    <h2>{event.title}</h2>
+                    <p>{event.description}</p>
+                  </div>
+                </a>
+              )
+
+            })}
           </div>
-          <div className="styles.rightContainerH">
-            <a href="/">Home</a>
-            <a href="/routes/about-us">About</a>
-            <a href="/routes/events">Events</a>
-          </div>
-        </nav>
-      </header>
+        </main>
 
-      <main>
-        <h1>Popular cities events</h1>
-
-        {eventsData.map((event) => {
-          return (
-            <a key={event.id} href={`/routes/events/${event.id}`}>
-              <h2>{event.title}</h2>
-              <img height={400} width={350} src={event.image} />
-              <p>{event.description}</p>
-            </a>
-          )
-        })}
-
-      </main>
-
-      <footer>
-        <div className="styles.leftContainerF">
-
-        </div>
-        <div className="styles.rightContainerF">
-          <a href="">facebook</a>
-          <a href="">instagram</a>
-          <a href="">twitter</a>
-          <a href="">youtube</a>
-        </div>
-      </footer>
+        <Footer />
+      </body>
     </>
   )
 }

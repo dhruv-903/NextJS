@@ -1,0 +1,30 @@
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.nav{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.rightContainerH a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+.rightContainerH p{
+    text-align: left;
+    color: black;
+    
+}

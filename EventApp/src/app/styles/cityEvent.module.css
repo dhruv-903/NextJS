@@ -1,0 +1,9 @@
+.mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    margin: 100px 200px;
+}
+.hrefContainer{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
